@@ -50,6 +50,19 @@ python3 scripts/generate_post.py
 Claude 가 루프마다 ArtBridge 인기 공연을 다시 받아 `data/performances.json` 을
 갱신하고 `generate_post.py` 를 실행해 그날짜 글을 만드는 것입니다.
 
+### 무인 스케줄 = 웹 예약 트리거 + SessionStart 훅
+
+이 환경에는 세션 내부 24시간 스케줄러가 없습니다. 진짜 무인 운영은:
+
+1. **Claude Code on the web 예약 트리거**로 매일 이 레포 세션을 자동으로 엽니다.
+   - 문서: https://code.claude.com/docs/en/claude-code-on-the-web
+2. 세션이 열리면 **SessionStart 훅**(`.claude/hooks/session-start.sh`)이
+   오늘자 글이 없을 때 에이전트에게 일일 작업을 지시합니다(데이터 수집→생성→커밋→푸시).
+   - 훅은 멱등합니다: 오늘 글이 이미 있으면 아무 일도 하지 않습니다.
+3. `scripts/daily_update.sh` 가 생성·커밋·푸시를 수행하고, GitHub Actions가 사이트를 배포합니다.
+
+> 훅을 기본 브랜치(main)에 머지하면 이후 모든 세션이 이 훅을 사용합니다.
+
 ## 발행 채널: GitHub Pages (자동 발행)
 
 푸시하면 GitHub Actions가 Jekyll 사이트를 빌드해 자동 배포합니다.
