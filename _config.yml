@@ -3,10 +3,10 @@ description: KOPIS 박스오피스 기준 매주 인기 공연·뮤지컬·연�
 author: Ticketpromote
 lang: ko-KR
 
-# GitHub Pages 프로젝트 사이트 기준 (https://<user>.github.io/Ticketpromote/)
-# 사용자/저장소 이름이 다르면 아래 두 값을 맞춰주세요.
+# GitHub Pages 프로젝트 사이트 기준 (https://<user>.github.io/<repo>/)
+# 저장소 이름이 바뀌면 baseurl 을 맞춰주세요. (현재 저장소: ikdd7/loop_write)
 url: "https://ikdd7.github.io"
-baseurl: "/Ticketpromote"
+baseurl: "/loop_write"
 
 theme: minima
 plugins:
