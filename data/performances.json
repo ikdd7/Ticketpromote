@@ -1,101 +1,83 @@
 {
   "generated_at": "2026-06-13",
-  "source": "KOPIS (ArtBridge get_trending_performances)",
+  "source": "KOPIS 공연예술통합전산망 (ArtBridge)",
   "performances": [
     {
-      "rank": 1,
-      "id": "PF293186",
-      "title": "페이퍼 키즈 매직쇼 [의정부]",
-      "genre": "서커스/마술",
-      "region": "경기도",
-      "venue": "우리소극장 [의정부]",
-      "period_start": "2026.06.13",
-      "period_end": "2026.06.20",
+      "rank": 1, "id": "PF293186", "title": "페이퍼 키즈 매직쇼 [의정부]",
+      "genre": "서커스/마술", "region": "경기도", "venue": "우리소극장 [의정부]",
+      "period_start": "2026.06.13", "period_end": "2026.06.20",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293186_260609_103537.png",
-      "popularity": 90,
-      "days_left": 7,
-      "price": "전석 18,000원",
-      "running_time": "45분",
-      "age": "전체 관람가",
-      "booking": [
-        { "name": "네이버N예약", "url": "https://booking.naver.com/booking/12/bizes/652011" }
-      ]
+      "popularity": 90, "days_left": 7, "price": "전석 18,000원", "running_time": "45분",
+      "age": "전체 관람가", "showtimes": "토요일 12:00, 14:00", "cast": [],
+      "booking": [{ "name": "네이버 예약", "url": "https://booking.naver.com/booking/12/bizes/652011" }]
     },
     {
-      "rank": 2,
-      "id": "PF293135",
-      "title": "깁스가족 [광주]",
-      "genre": "연극",
-      "region": "광주광역시",
-      "venue": "씨어터연바람",
-      "period_start": "2026.06.12",
-      "period_end": "2026.06.14",
+      "rank": 2, "id": "PF293135", "title": "깁스가족 [광주]",
+      "genre": "연극", "region": "광주광역시", "venue": "씨어터연바람",
+      "period_start": "2026.06.12", "period_end": "2026.06.14",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293135_260608_154812.gif",
-      "popularity": 90,
-      "days_left": 1,
-      "price": "전석 40,000원",
-      "running_time": "1시간 30분",
-      "age": "만 6세 이상",
-      "booking": [
-        { "name": "놀유니버스(인터파크)", "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007643" }
-      ]
+      "popularity": 90, "days_left": 1, "price": "전석 40,000원", "running_time": "1시간 30분",
+      "age": "만 6세 이상", "showtimes": "금 20:00 / 토 16:00, 20:00 / 일 16:00",
+      "cast": ["박영진", "최이노", "이혜원", "정낙일", "송민종", "차성경"],
+      "booking": [{ "name": "인터파크(놀유니버스)", "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007643" }]
     },
     {
-      "rank": 3,
-      "id": "PF293076",
-      "title": "울사운드 페스티벌",
-      "genre": "대중음악",
-      "region": "울산광역시",
-      "venue": "울산중구문화의전당 (함월홀)",
-      "period_start": "2026.06.13",
-      "period_end": "2026.06.14",
+      "rank": 3, "id": "PF293076", "title": "울사운드 페스티벌",
+      "genre": "대중음악", "region": "울산광역시", "venue": "울산중구문화의전당 (함월홀)",
+      "period_start": "2026.06.13", "period_end": "2026.06.14",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293076_260608_135037.png",
-      "popularity": 90,
-      "days_left": 1,
-      "price": "전석무료",
-      "running_time": "2시간",
-      "age": "만 7세 이상",
-      "booking": [
-        { "name": "울산중구문화의전당", "url": "https://artscenter.junggu.ulsan.kr/01_Menu/01_view.do?prcValue=P0001847&searchCat1=PFMANC" }
-      ]
+      "popularity": 90, "days_left": 1, "price": "전석무료", "running_time": "2시간",
+      "age": "만 7세 이상", "showtimes": "토~일 18:00", "cast": [],
+      "booking": [{ "name": "울산중구문화의전당", "url": "https://artscenter.junggu.ulsan.kr/01_Menu/01_view.do?prcValue=P0001847&searchCat1=PFMANC" }]
     },
     {
-      "rank": 4,
-      "id": "PF293011",
-      "title": "주인공 [서울]",
-      "genre": "연극",
-      "region": "서울특별시",
-      "venue": "다케이씨어터 (구. 창조소극장)",
-      "period_start": "2026.06.10",
-      "period_end": "2026.06.14",
+      "rank": 4, "id": "PF293011", "title": "주인공 [서울]",
+      "genre": "연극", "region": "서울특별시", "venue": "다케이씨어터 (구. 창조소극장)",
+      "period_start": "2026.06.10", "period_end": "2026.06.14",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293011_260608_112646.gif",
-      "popularity": 90,
-      "days_left": 1,
-      "price": "전석 30,000원",
-      "running_time": "1시간 30분",
-      "age": "전체 관람가",
-      "booking": [
-        { "name": "놀유니버스(인터파크)", "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008153" }
-      ]
+      "popularity": 90, "days_left": 1, "price": "전석 30,000원", "running_time": "1시간 30분",
+      "age": "전체 관람가", "showtimes": "수~금 19:30 / 토 15:00, 19:30 / 일 14:00",
+      "cast": ["남윤성", "이재홍", "김미소", "김수연", "강민경", "손세빈", "김성영"],
+      "booking": [{ "name": "인터파크(놀유니버스)", "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008153" }]
     },
     {
-      "rank": 5,
-      "id": "PF292914",
-      "title": "다시보는 공연 봄날, 교감",
-      "genre": "서커스/마술",
-      "region": "서울특별시",
-      "venue": "세종문화회관 (세종S씨어터)",
-      "period_start": "2026.06.10",
-      "period_end": "2026.06.14",
+      "rank": 5, "id": "PF292914", "title": "다시보는 공연 봄날, 교감",
+      "genre": "서커스/마술", "region": "서울특별시", "venue": "세종문화회관 (세종S씨어터)",
+      "period_start": "2026.06.10", "period_end": "2026.06.14",
       "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292914_260604_150352.png",
-      "popularity": 90,
-      "days_left": 1,
-      "price": "전석무료",
-      "running_time": "50분",
-      "age": "만 2세 이상",
-      "booking": [
-        { "name": "세종문화회관", "url": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37335&menuNo=200320" }
-      ]
+      "popularity": 90, "days_left": 1, "price": "전석무료", "running_time": "50분",
+      "age": "만 2세 이상", "showtimes": "수~금 10:30 / 토 14:00, 19:30 / 일 14:00", "cast": [],
+      "booking": [{ "name": "세종문화회관", "url": "https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37335&menuNo=200320" }]
+    },
+    {
+      "rank": 6, "id": "PF292800", "title": "person: A, The Veil (더 베일)",
+      "genre": "연극", "region": "서울특별시", "venue": "서강대 메리홀 (소극장)",
+      "period_start": "2026.06.05", "period_end": "2026.06.14",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292800_260602_135545.png",
+      "popularity": 90, "days_left": 1, "price": "전석무료", "running_time": "1시간",
+      "age": "만 13세 이상", "showtimes": "화~금 19:30, 21:00 / 토~일 14:00, 15:30, 19:00, 20:30",
+      "cast": ["박지원"],
+      "booking": [{ "name": "플레이티켓", "url": "http://playticket.co.kr/nav/detail.html?idx=4372" }]
+    },
+    {
+      "rank": 7, "id": "PF292784", "title": "person: A, 피핑 톰 (Peeping Tom)",
+      "genre": "연극", "region": "서울특별시", "venue": "서강대 메리홀 (소극장)",
+      "period_start": "2026.06.05", "period_end": "2026.06.14",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292784_260602_131918.png",
+      "popularity": 90, "days_left": 1, "price": "전석무료", "running_time": "1시간",
+      "age": "만 13세 이상", "showtimes": "화~금 19:30, 21:00 / 토~일 14:00, 15:30, 19:00, 20:30",
+      "cast": ["박준희", "안태호", "조재성"],
+      "booking": [{ "name": "플레이티켓", "url": "http://playticket.co.kr/nav/detail.html?idx=4379" }]
+    },
+    {
+      "rank": 8, "id": "PF292699", "title": "오해 [대학로]",
+      "genre": "연극", "region": "서울특별시", "venue": "소극장 공유",
+      "period_start": "2026.06.13", "period_end": "2026.06.14",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF292699_260601_151759.gif",
+      "popularity": 90, "days_left": 1, "price": "전석 40,000원", "running_time": "1시간 30분",
+      "age": "만 13세 이상", "showtimes": "토 15:00, 18:00 / 일 14:00, 17:00",
+      "cast": ["한소희", "김혜은", "문성호", "손예원", "정성진"],
+      "booking": [{ "name": "인터파크(놀유니버스)", "url": "http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007762" }]
     }
   ]
 }
