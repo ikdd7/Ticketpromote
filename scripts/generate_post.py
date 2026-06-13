@@ -128,7 +128,7 @@ def perf_card(p: dict, cfg: dict) -> str:
         if book_url
         else ""
     )
-    return f"""<article class="perf-card" id="rank-{rank}">
+    return f"""<article class="perf-card" id="rank-{rank}" data-genre="{e(p.get('genre',''))}" data-region="{e(p.get('region',''))}">
   <div class="perf-rank">{rank}{free_ribbon}</div>
   {poster_html}
   <div class="perf-body">
@@ -139,6 +139,13 @@ def perf_card(p: dict, cfg: dict) -> str:
     {btn}
   </div>
 </article>"""
+
+
+def filter_bar(genres: list[str]) -> str:
+    chips = ['<button class="active" data-filter="all">전체</button>']
+    for g in genres:
+        chips.append(f'<button data-filter="{e(g)}">{e(g)}</button>')
+    return '<div class="filter-bar" role="group" aria-label="장르 필터">' + "".join(chips) + "</div>"
 
 
 def summary_table(perfs: list[dict]) -> str:
@@ -260,6 +267,8 @@ def build(data: dict, cfg: dict) -> tuple[str, str, dict]:
     parts.append("<h2>한눈에 보기</h2>")
     parts.append(summary_table(perfs))
     parts.append("<h2>인기 공연 상세</h2>")
+    if len(genres) > 1:
+        parts.append(filter_bar(genres))
     for p in perfs:
         parts.append(perf_card(p, cfg))
     if free_cnt:

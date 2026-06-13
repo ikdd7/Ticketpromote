@@ -348,7 +348,8 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
 <h2>한눈에 보기</h2>
 <table class="summary"><thead><tr><th>순위</th><th>공연명</th><th>장르</th><th>지역</th><th>관람료</th><th>마감</th></tr></thead><tbody><tr><td>1</td><td><a href="#rank-1">페이퍼 키즈 매직쇼 [의정부]</a></td><td>서커스/마술</td><td>경기도</td><td>전석 18,000원</td><td>D-7</td></tr><tr><td>2</td><td><a href="#rank-2">깁스가족 [광주]</a></td><td>연극</td><td>광주광역시</td><td>전석 40,000원</td><td>D-1</td></tr><tr><td>3</td><td><a href="#rank-3">울사운드 페스티벌</a></td><td>대중음악</td><td>울산광역시</td><td><span class="price-free">무료</span></td><td>D-1</td></tr><tr><td>4</td><td><a href="#rank-4">주인공 [서울]</a></td><td>연극</td><td>서울특별시</td><td>전석 30,000원</td><td>D-1</td></tr><tr><td>5</td><td><a href="#rank-5">다시보는 공연 봄날, 교감</a></td><td>서커스/마술</td><td>서울특별시</td><td><span class="price-free">무료</span></td><td>D-1</td></tr><tr><td>6</td><td><a href="#rank-6">person: A, The Veil (더 베일)</a></td><td>연극</td><td>서울특별시</td><td><span class="price-free">무료</span></td><td>D-1</td></tr><tr><td>7</td><td><a href="#rank-7">person: A, 피핑 톰 (Peeping Tom)</a></td><td>연극</td><td>서울특별시</td><td><span class="price-free">무료</span></td><td>D-1</td></tr><tr><td>8</td><td><a href="#rank-8">오해 [대학로]</a></td><td>연극</td><td>서울특별시</td><td>전석 40,000원</td><td>D-1</td></tr></tbody></table>
 <h2>인기 공연 상세</h2>
-<article class="perf-card" id="rank-1">
+<div class="filter-bar" role="group" aria-label="장르 필터"><button class="active" data-filter="all">전체</button><button data-filter="대중음악">대중음악</button><button data-filter="서커스/마술">서커스/마술</button><button data-filter="연극">연극</button></div>
+<article class="perf-card" id="rank-1" data-genre="서커스/마술" data-region="경기도">
   <div class="perf-rank">1</div>
   <a class="perf-poster" href="https://booking.naver.com/booking/12/bizes/652011?utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF293186_260609_103537.png" alt="페이퍼 키즈 매직쇼 [의정부] 포스터"></a>
   <div class="perf-body">
@@ -359,7 +360,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="https://booking.naver.com/booking/12/bizes/652011?utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 네이버 예약에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-2">
+<article class="perf-card" id="rank-2" data-genre="연극" data-region="광주광역시">
   <div class="perf-rank">2</div>
   <a class="perf-poster" href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007643&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF293135_260608_154812.gif" alt="깁스가족 [광주] 포스터"></a>
   <div class="perf-body">
@@ -370,7 +371,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007643&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 인터파크(놀유니버스)에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-3">
+<article class="perf-card" id="rank-3" data-genre="대중음악" data-region="울산광역시">
   <div class="perf-rank">3<span class="ribbon-free">무료</span></div>
   <a class="perf-poster" href="https://artscenter.junggu.ulsan.kr/01_Menu/01_view.do?prcValue=P0001847&amp;searchCat1=PFMANC&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF293076_260608_135037.png" alt="울사운드 페스티벌 포스터"></a>
   <div class="perf-body">
@@ -381,7 +382,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="https://artscenter.junggu.ulsan.kr/01_Menu/01_view.do?prcValue=P0001847&amp;searchCat1=PFMANC&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 울산중구문화의전당에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-4">
+<article class="perf-card" id="rank-4" data-genre="연극" data-region="서울특별시">
   <div class="perf-rank">4</div>
   <a class="perf-poster" href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008153&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF293011_260608_112646.gif" alt="주인공 [서울] 포스터"></a>
   <div class="perf-body">
@@ -392,7 +393,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26008153&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 인터파크(놀유니버스)에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-5">
+<article class="perf-card" id="rank-5" data-genre="서커스/마술" data-region="서울특별시">
   <div class="perf-rank">5<span class="ribbon-free">무료</span></div>
   <a class="perf-poster" href="https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37335&amp;menuNo=200320&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF292914_260604_150352.png" alt="다시보는 공연 봄날, 교감 포스터"></a>
   <div class="perf-body">
@@ -403,7 +404,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="https://www.sejongpac.or.kr/portal/performance/performance/performTicket.do?performIdx=37335&amp;menuNo=200320&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 세종문화회관에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-6">
+<article class="perf-card" id="rank-6" data-genre="연극" data-region="서울특별시">
   <div class="perf-rank">6<span class="ribbon-free">무료</span></div>
   <a class="perf-poster" href="http://playticket.co.kr/nav/detail.html?idx=4372&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF292800_260602_135545.png" alt="person: A, The Veil (더 베일) 포스터"></a>
   <div class="perf-body">
@@ -414,7 +415,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="http://playticket.co.kr/nav/detail.html?idx=4372&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 플레이티켓에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-7">
+<article class="perf-card" id="rank-7" data-genre="연극" data-region="서울특별시">
   <div class="perf-rank">7<span class="ribbon-free">무료</span></div>
   <a class="perf-poster" href="http://playticket.co.kr/nav/detail.html?idx=4379&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF292784_260602_131918.png" alt="person: A, 피핑 톰 (Peeping Tom) 포스터"></a>
   <div class="perf-body">
@@ -425,7 +426,7 @@ tags: [공연추천, 이번주공연, 뮤지컬추천, 연극추천, 콘서트, 
     <a class="book-btn" href="http://playticket.co.kr/nav/detail.html?idx=4379&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored">🎟️ 플레이티켓에서 예매하기 →</a>
   </div>
 </article>
-<article class="perf-card" id="rank-8">
+<article class="perf-card" id="rank-8" data-genre="연극" data-region="서울특별시">
   <div class="perf-rank">8</div>
   <a class="perf-poster" href="http://ticket.interpark.com/Ticket/Goods/GoodsInfo.asp?GoodsCode=26007762&amp;utm_source=ticketpromote&amp;utm_medium=blog&amp;utm_campaign=weekly-trending" target="_blank" rel="nofollow sponsored"><img loading="lazy" src="http://www.kopis.or.kr/upload/pfmPoster/PF_PF292699_260601_151759.gif" alt="오해 [대학로] 포스터"></a>
   <div class="perf-body">
