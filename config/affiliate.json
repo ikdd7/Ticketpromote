@@ -1,0 +1,24 @@
+{
+  "_README": "여기가 '환전' 설정 지점입니다. 제휴 가입 후 아래 값만 채우면 모든 글에 자동 반영됩니다.",
+  "affiliate": {
+    "redirect_base": "",
+    "_redirect_base_help": "선택. 자기 도메인 리다이렉트가 있으면 입력. 예: https://내도메인.com/go?u= (대상 URL이 뒤에 인코딩되어 붙음)",
+    "utm": {
+      "utm_source": "ticketpromote",
+      "utm_medium": "blog",
+      "utm_campaign": "weekly-trending"
+    },
+    "domain_overrides": {
+      "_help": "선택. 특정 예매처 제휴 링크 템플릿. {url} 자리에 대상 URL(인코딩)이 들어갑니다. 예: 애드픽/텐핑 트래킹 링크.",
+      "ticket.interpark.com": "",
+      "tickets.interpark.com": "",
+      "ticket.yes24.com": "",
+      "www.ticketlink.co.kr": "",
+      "booking.naver.com": ""
+    }
+  },
+  "channel": {
+    "blog_name": "이번 주 공연 추천",
+    "footer_disclosure": "본 포스팅은 제휴(파트너스) 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다."
+  }
+}

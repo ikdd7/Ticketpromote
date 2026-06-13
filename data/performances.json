@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-06-13",
+  "source": "KOPIS (ArtBridge get_trending_performances)",
+  "performances": [
+    {
+      "rank": 1,
+      "id": "PF293186",
+      "title": "페이퍼 키즈 매직쇼 [의정부]",
+      "genre": "서커스/마술",
+      "region": "경기도",
+      "venue": "우리소극장 [의정부]",
+      "period_start": "2026.06.13",
+      "period_end": "2026.06.20",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293186_260609_103537.png",
+      "popularity": 90,
+      "days_left": 7,
+      "price": "전석 18,000원",
+      "running_time": "45분",
+      "age": "전체 관람가",
+      "booking": [
+        { "name": "네이버N예약", "url": "https://booking.naver.com/booking/12/bizes/652011" }
+      ]
+    },
+    {
+      "rank": 2,
+      "id": "PF293076",
+      "title": "울사운드 페스티벌",
+      "genre": "대중음악",
+      "region": "울산광역시",
+      "venue": "울산중구문화의전당",
+      "period_start": "2026.06.13",
+      "period_end": "2026.06.14",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293076_260608_135037.png",
+      "popularity": 90,
+      "days_left": 1,
+      "booking": []
+    },
+    {
+      "rank": 3,
+      "id": "PF293011",
+      "title": "주인공 [서울]",
+      "genre": "연극",
+      "region": "서울특별시",
+      "venue": "다케이씨어터 (구. 창조소극장)",
+      "period_start": "2026.06.10",
+      "period_end": "2026.06.14",
+      "poster": "http://www.kopis.or.kr/upload/pfmPoster/PF_PF293011_260608_112646.gif",
+      "popularity": 90,
+      "days_left": 1,
+      "booking": []
+    }
+  ]
+}
