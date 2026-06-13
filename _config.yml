@@ -4,11 +4,10 @@ author: Ticketpromote
 lang: ko-KR
 
 # ── 발행 주소 ──────────────────────────────────────────────
-# GitHub Pages 기본 주소(프로젝트 사이트): https://<user>.github.io/<repo>/
-# 커스텀 도메인을 붙이면 url 을 도메인으로 바꾸고 baseurl 은 "" 로 비웁니다.
-# (자세한 절차는 CUSTOM_DOMAIN.md 참고)
+# 유저 사이트(저장소명 = ikdd7.github.io): 루트(https://ikdd7.github.io/)에서 서비스 → baseurl 비움
+# 커스텀 도메인을 붙이면 url 만 도메인으로 교체. (절차: CUSTOM_DOMAIN.md)
 url: "https://ikdd7.github.io"
-baseurl: "/loop_write"
+baseurl: ""
 
 # 깔끔한 SEO 친화 URL (예: /2026/06/13/weekly-trending/)
 permalink: /:year/:month/:day/:title/

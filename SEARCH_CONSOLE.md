@@ -3,8 +3,8 @@
 자동 발행만으로는 부족하고, 검색엔진에 **사이트 등록 + 사이트맵 제출**을 해야
 검색 유입(=트래픽=수익)이 시작됩니다. 1회 작업입니다.
 
-사이트맵 주소: `https://ikdd7.github.io/loop_write/sitemap.xml`
-RSS 주소: `https://ikdd7.github.io/loop_write/feed.xml`
+사이트맵 주소: `https://ikdd7.github.io/sitemap.xml`
+RSS 주소: `https://ikdd7.github.io/feed.xml`
 (커스텀 도메인을 붙였다면 그 도메인 기준 주소로 대체)
 
 ---
@@ -12,7 +12,7 @@ RSS 주소: `https://ikdd7.github.io/loop_write/feed.xml`
 ## 1. 구글 서치콘솔 (Google Search Console)
 
 1. https://search.google.com/search-console 접속 → 속성 추가 → **URL 접두어** 에
-   `https://ikdd7.github.io/loop_write/` 입력
+   `https://ikdd7.github.io/` 입력
 2. 소유확인 방법 중 **HTML 태그** 선택 → `content="..."` 값(인증코드) 복사
 3. 저장소 `_config.yml` 의 `google_site_verification: "여기에붙여넣기"` 에 입력 후 푸시
    → 배포되면 서치콘솔에서 **확인** 클릭
@@ -22,7 +22,7 @@ RSS 주소: `https://ikdd7.github.io/loop_write/feed.xml`
 ## 2. 네이버 서치어드바이저 (국내 유입 핵심)
 
 1. https://searchadvisor.naver.com 접속 → 웹마스터도구 → 사이트 등록
-   `https://ikdd7.github.io/loop_write/`
+   `https://ikdd7.github.io/`
 2. 소유확인 **HTML 태그** → `content` 값 복사
 3. `_config.yml` 의 `naver_site_verification: "여기에붙여넣기"` 에 입력 후 푸시 → **확인**
 4. **요청 → 사이트맵 제출** 에 `sitemap.xml`, **RSS 제출** 에 `feed.xml` 등록
