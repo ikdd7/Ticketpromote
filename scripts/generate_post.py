@@ -27,6 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_DATA = os.path.join(ROOT, "data", "performances.json")
 DEFAULT_CONFIG = os.path.join(ROOT, "config", "affiliate.json")
 OUT_DIR = os.path.join(ROOT, "content")
+POSTS_DIR = os.path.join(ROOT, "_posts")  # Jekyll(GitHub Pages) 게시물 디렉터리
 
 
 def load_json(path: str, fallback: dict | None = None) -> dict:
@@ -93,6 +94,7 @@ def build_markdown(data: dict, cfg: dict) -> tuple[str, str]:
     lines: list[str] = []
     # YAML front matter (Jekyll/워드프레스/티스토리 메타로 재활용)
     lines.append("---")
+    lines.append("layout: post")
     lines.append(f'title: "{title}"')
     lines.append(f'description: "{desc}"')
     lines.append(f"date: {gen_date}")
@@ -201,24 +203,26 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default=DEFAULT_DATA)
     ap.add_argument("--config", default=DEFAULT_CONFIG)
-    ap.add_argument("--outdir", default=OUT_DIR)
+    ap.add_argument("--outdir", default=OUT_DIR, help="HTML 백업 출력 디렉터리")
+    ap.add_argument("--postsdir", default=POSTS_DIR, help="Jekyll 게시물(_posts) 디렉터리")
     args = ap.parse_args()
 
     data = load_json(args.data)
     cfg = load_json(args.config, fallback={})
     os.makedirs(args.outdir, exist_ok=True)
+    os.makedirs(args.postsdir, exist_ok=True)
 
     md, html_out = build_markdown(data, cfg)
     gen_date = data.get("generated_at") or date.today().isoformat()
     stem = f"{gen_date}-weekly-trending"
-    md_path = os.path.join(args.outdir, f"{stem}.md")
-    html_path = os.path.join(args.outdir, f"{stem}.html")
+    md_path = os.path.join(args.postsdir, f"{stem}.md")  # GitHub Pages가 자동 발행
+    html_path = os.path.join(args.outdir, f"{stem}.html")  # 타 채널용 백업
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(md)
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html_out)
 
-    print(f"[ok] 생성 완료:\n  - {md_path}\n  - {html_path}")
+    print(f"[ok] 생성 완료:\n  - {md_path} (Jekyll 게시물)\n  - {html_path} (HTML 백업)")
     print(f"[info] 공연 {len(data.get('performances', []))}개 반영")
 
 

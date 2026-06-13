@@ -50,12 +50,32 @@ python3 scripts/generate_post.py
 Claude 가 루프마다 ArtBridge 인기 공연을 다시 받아 `data/performances.json` 을
 갱신하고 `generate_post.py` 를 실행해 그날짜 글을 만드는 것입니다.
 
+## 발행 채널: GitHub Pages (자동 발행)
+
+푸시하면 GitHub Actions가 Jekyll 사이트를 빌드해 자동 배포합니다.
+글 생성기가 `_posts/` 에 게시물을 쓰면 → 사이트에 자동으로 올라갑니다.
+
+### 최초 1회 설정 (사용자)
+
+1. GitHub 저장소 → **Settings → Pages**
+2. **Build and deployment → Source** 를 **GitHub Actions** 로 선택
+3. (선택) 최종 운영은 `main` 브랜치 기준 — 현재 워크플로는 `main` 과
+   `claude/model-1g2dvg` 둘 다에서 배포합니다. 운영 시 이 브랜치를 `main` 에 머지하세요.
+4. 게시 URL: `https://<깃허브아이디>.github.io/Ticketpromote/`
+   - 아이디/저장소명이 다르면 `_config.yml` 의 `url` / `baseurl` 을 맞춰주세요.
+
+> AdSense 광고 코드는 승인 후 `_config.yml` 안내대로 head 에 삽입하면 전 글에 적용됩니다.
+
 ## 디렉터리
 
 ```
 scripts/generate_post.py   글 생성기 (표준 라이브러리만, 의존성 없음)
 config/affiliate.json      제휴/UTM/채널 설정 (← 환전 지점)
 data/performances.json     최신 수집 데이터 (루프마다 갱신)
-content/                   생성된 발행용 글 (md + html)
+_posts/                    생성된 Jekyll 게시물 (← GitHub Pages가 발행)
+content/                   HTML 백업 (타 채널 붙여넣기용)
+_config.yml / index.md     Jekyll 사이트 설정/홈
+Gemfile                    Jekyll 의존성
+.github/workflows/pages.yml  푸시 시 사이트 자동 빌드·배포
 RUNBOOK.md                 일일 자동화 운영 가이드
 ```

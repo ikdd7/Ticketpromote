@@ -8,8 +8,9 @@ Claude Code 세션에서 아래 작업을 매일(또는 원하는 주기로) 반
    - 필요시 `filter_free_events`(무료 공연), `search_events_by_location`(지역별)도 병행
 2. 각 공연을 `get_event_detail` 로 보강(관람료·예매 링크·공연시간)
 3. 결과를 `data/performances.json` 형식으로 저장
-4. `python3 scripts/generate_post.py` 실행 → `content/<날짜>-weekly-trending.md/.html` 생성
-5. 변경분 커밋 & 푸시
+4. `python3 scripts/generate_post.py` 실행 →
+   `_posts/<날짜>-weekly-trending.md`(Jekyll 게시물) + `content/<날짜>-*.html`(백업) 생성
+5. 변경분 커밋 & 푸시 → GitHub Actions 가 사이트를 자동 재배포
 
 > 데이터 수집은 ArtBridge MCP 도구가 필요하므로 "스크립트 단독 cron" 이 아니라
 > Claude 루프(에이전트가 도구를 호출)로 돌립니다.
