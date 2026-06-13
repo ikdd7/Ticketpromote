@@ -1,6 +1,6 @@
 # 커스텀 도메인 + SEO 가이드
 
-GitHub 기본 주소(`ikdd7.github.io/idea`) 대신 **내 도메인**으로 발행하면
+GitHub 기본 주소(`ikdd7.github.io/loop_write`) 대신 **내 도메인**으로 발행하면
 브랜드·신뢰도·SEO에 유리합니다. (AdSense 승인에도 도움)
 
 ## 1. 도메인 준비

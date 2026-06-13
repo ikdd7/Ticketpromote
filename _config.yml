@@ -8,7 +8,7 @@ lang: ko-KR
 # 커스텀 도메인을 붙이면 url 을 도메인으로 바꾸고 baseurl 은 "" 로 비웁니다.
 # (자세한 절차는 CUSTOM_DOMAIN.md 참고)
 url: "https://ikdd7.github.io"
-baseurl: "/idea"
+baseurl: "/loop_write"
 
 # 깔끔한 SEO 친화 URL (예: /2026/06/13/weekly-trending/)
 permalink: /:year/:month/:day/:title/
