@@ -31,7 +31,9 @@ exclude:
   - RUNBOOK.md
   - CUSTOM_DOMAIN.md
   - SEARCH_CONSOLE.md
+  - PRODUCT.md
   - README.md
+  - products/
   - Gemfile
   - Gemfile.lock
   - vendor/
